@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 require("./db/conn");
 const Student = require("./models/students");
 const app = express();
+//it will ensure a proper port so we can use it in localhost as well as in other .
 const port = process.env.PORT || 8000;
 
 
