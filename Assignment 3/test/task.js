@@ -1,6 +1,6 @@
 
 let chai = require('chai');
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 let chaiHttp = require('chai-http');
 let server = require('../src/app');
 let express = require('express');
@@ -39,14 +39,14 @@ describe("Task Api", () => {
         })
 
 
-        it("it should NOT get all the students", (done) => {
-            chai.request('http://localhost:8000')
-                .get("/student")
-                .end((err, response) => {
-                    response.should.have.status(404);
-                    done();
-                })
-        })
+//         it("it should NOT get all the students", (done) => {
+//             chai.request('http://localhost:8000')
+//                 .get("/student")
+//                 .end((err, response) => {
+//                     response.should.have.status(404);
+//                     done();
+//                 })
+//         })
 
     })
 
