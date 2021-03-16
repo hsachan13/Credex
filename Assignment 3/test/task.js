@@ -1,12 +1,12 @@
 
 let chai = require('chai');
- var mongoose = require('mongoose');
+//  var mongoose = require('mongoose');
 let chaiHttp = require('chai-http');
 let server = require('../src/app');
 let express = require('express');
-const app = express();
+// const app = express();
 
-app.use(express.json());
+// app.use(express.json());
 
 
 //Assertion style
